@@ -80,7 +80,7 @@
             // Discover
             self.discoverer = self.bluetoothDeviceManager.discoverer;
             self.discoverer.delegate = self;
-            BOOL discovering = [self.discoverer discoverDevicesNamed:@"Syrmo Tracker" withServices:nil andTimeout:30000];
+            BOOL discovering = [self.discoverer discoverDevicesNamed:nil withServices:nil andTimeout:30000];
             if (!discovering) {
                     NSLog(@"Cannot start the discovering process");
             }
